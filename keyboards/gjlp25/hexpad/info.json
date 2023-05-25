@@ -1,33 +1,28 @@
 {
-    "keyboard_name": "hexpad",
-    "manufacturer": "gjlp25",
-    "url": "",
+    "manufacturer": "Robert Postma",
+    "keyboard_name": "gjlp25/hexpad",
     "maintainer": "gjlp25",
-    "usb": {
-        "vid": "0xFEED",
-        "pid": "0x0000",
-        "device_version": "1.0.0"
-    },
-    "processor": "RP2040",
     "bootloader": "rp2040",
-    "matrix_pins": {
-        "direct": [
-            ["B1", "B2", "B3", "B4", "B5", "B6", "B7"]
-        ]
-
-    },
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
-        "mousekey": true,
-        "extrakey": true,
-        "console": false,
         "command": false,
-        "nkro": false,
-        "backlight": false,
-        "rgblight": false,
-        "audio": false,
-        "key_lock": false
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP28", "GP27", "GP5", "GP26", "GP24", "GP20", "GP25"]
+        ]
+    },
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0000",
+        "vid": "0xFEED"
     },
     "layouts": {
         "LAYOUT": {
@@ -39,8 +34,7 @@
                 {"label": "K04 (B0,B5)", "matrix": [0, 4], "x": 4, "y": 0},
                 {"label": "K05 (B0,B6)", "matrix": [0, 5], "x": 5, "y": 0},
                 {"label": "K06 (B0,B7)", "matrix": [0, 6], "x": 6, "y": 0}
-           ]
+            ]
         }
-    },
-    "meta": "https://noroadsleft.github.io/kbf_qmk_converter/"
+    }
 }
